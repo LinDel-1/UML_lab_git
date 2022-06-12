@@ -5,7 +5,6 @@
 int main() {
 
 	test_1();
-	std::cout << "NEW COMMIT" << std::endl;
 
 	return 0;
 }
