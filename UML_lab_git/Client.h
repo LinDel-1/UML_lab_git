@@ -3,9 +3,9 @@
 
 
 class Client {
-	class Balance {
+	class Balance { //Composition
 	public:
-		void add_money(double money) { m_money += money; }
+		void add_money(double money) { m_money += money; } 
 		bool waste_money(double money) {
 			if (money > m_money) return false;
 			m_money -= money;

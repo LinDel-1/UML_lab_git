@@ -1,7 +1,8 @@
 #pragma once
 #include "Product.h"
 
-class PriceBase {
+//Singleton
+class PriceBase { //Database of products
 public:
 	PriceBase(const PriceBase&) = delete;
 	PriceBase& operator = (const PriceBase&) = delete;
