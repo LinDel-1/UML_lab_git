@@ -11,14 +11,14 @@ public:
 		return instance;
 	}
 
-	WeightProduct get_product_weight_price(const std::string name) {
+	const WeightProduct& get_product_weight_price(const std::string& name) const {
 		auto it = m_products_weight_price.find(name);
 		if (it == m_products_weight_price.end())
 			throw("This name can't be found");
 		return it->second;
 	}
 
-	AmmountProduct get_product_ammount_price(const std::string name) {
+	const AmmountProduct& get_product_ammount_price(const std::string& name) const {
 		auto it = m_products_ammount_price.find(name);
 		if (it == m_products_ammount_price.end())
 			throw("This name can't be found");

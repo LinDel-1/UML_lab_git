@@ -4,7 +4,7 @@
 class Position { //Position assosiating with one type of product
 public: //Interface class
 	Position() = default;
-	explicit Position(std::unique_ptr<Product> ptr_product)
+	explicit Position(std::unique_ptr<Product>&& ptr_product)
 		:m_ptr_product(std::move(ptr_product)) {};
 	std::unique_ptr<Product>& get_ptr_product() { return m_ptr_product; }
 	virtual double get_cost() const = 0; 
